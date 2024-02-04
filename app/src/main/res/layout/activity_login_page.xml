@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/progress_login"/>
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="-80dp"
+        android:layout_below="@+id/top_view">
+
+        <!-- Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card7"
+            android:layout_width="-10dp"
+            android:layout_height="-10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="12dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="12dp">
+
+            <!-- Card Content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/manager"
+                    android:layout_marginBottom="50dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in as a supervisor"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/black"/>
+
+                <!-- User ID EditText -->
+                <EditText
+                    android:id="@+id/editTextUserId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="User ID"
+                    android:minHeight="60dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginLeft="12dp"/>
+
+                <!-- Password EditText -->
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:minHeight="60dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"/>
+
+                <!-- Login Button -->
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="Login"
+                    android:textSize="20dp"/>
+
+                <!-- Forgot Password Link -->
+                <TextView
+                    android:id="@+id/textViewForgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/purple_700"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck"
+                    android:textStyle="bold"/>
+
+                <!-- Signup Link -->
+                <TextView
+                    android:id="@+id/textViewSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal"
+                    android:text="Don't have an account? Sign Up"
+                    android:textColor="@color/purple_700"
+                    android:textSize="10dp"
+                    tools:ignore="TextSizeCheck"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</RelativeLayout>

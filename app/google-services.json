@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "651679052638",
+    "firebase_url": "https://chalo-clean-creaw-app-layout-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "chalo-clean-creaw-app-layout",
+    "storage_bucket": "chalo-clean-creaw-app-layout.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651679052638:android:43da478ac5cb01939615cf",
+        "android_client_info": {
+          "package_name": "com.example.chalocleancreawapplayout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFi8121Puerwnmmt4gOpdy09f2dXxyYGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

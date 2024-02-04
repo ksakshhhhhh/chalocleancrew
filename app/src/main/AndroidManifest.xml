@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ChaloCleanCreawAppLayout"
+        tools:targetApi="31">
+        <activity
+            android:name=".Worker_Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".worker_create_page"
+            android:exported="false" />
+        <activity
+            android:name=".Signup_supervisor"
+            android:exported="false" /> <!-- Change the launch activity to Role -->
+        <activity
+            android:name=".Role"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Other activities (unchanged) -->
+        <activity
+            android:name=".Worker_login"
+            android:exported="false" />
+        <activity
+            android:name=".Login_page"
+            android:exported="false" />
+        <activity
+            android:name=".Six"
+            android:exported="false" />
+        <activity
+            android:name=".Five"
+            android:exported="false" />
+        <activity
+            android:name=".Four"
+            android:exported="false" />
+        <activity
+            android:name=".Three"
+            android:exported="false" />
+        <activity
+            android:name=".Two"
+            android:exported="false" />
+        <activity
+            android:name=".One"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

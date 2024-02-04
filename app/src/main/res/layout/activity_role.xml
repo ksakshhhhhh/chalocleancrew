@@ -1,0 +1,125 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Top View -->
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/bg_view" />
+
+    <!-- GridLayout -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="-80dp"
+        android:layout_below="@+id/top_view">
+
+        <!-- Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="-10dp"
+            android:layout_height="-10dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="12dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_margin="12dp">
+
+            <!-- Card Content -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Choose Your Role Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose Your Role"
+                    android:textSize="30sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginBottom="2dp"
+                    android:textStyle="bold" />
+
+                <!-- Circular Cards -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginBottom="60dp">
+
+                    <!-- Supervisor Card -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="40dp"
+                        app:cardElevation="6dp"
+                        android:layout_margin="40dp">
+
+                        <!-- EditText for Supervisor Card -->
+
+                        <!-- Your Supervisor Icon or Image -->
+                        <!-- For example, you can use an ImageView here -->
+                        <ImageView
+                            android:id="@+id/img1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/manager"
+                            android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Supervisor Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Supervisor"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="-18dp"
+                        android:textStyle="bold"/>
+
+                    <!-- Employee Card -->
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        app:cardCornerRadius="40dp"
+                        app:cardElevation="6dp"
+                        android:layout_margin="40dp">
+
+
+                        <!-- Your Employee Icon or Image -->
+                        <!-- For example, you can use an ImageView here -->
+                        <ImageView
+                            android:id="@+id/img2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/employee"
+                            android:scaleType="centerCrop" />
+                    </androidx.cardview.widget.CardView>
+
+                    <!-- Employee Text -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Employee"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/black"
+                        android:layout_marginTop="-18dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+</RelativeLayout>
